@@ -1,0 +1,584 @@
+/* Normalize CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    background-color: #040405;
+    font-family: Inter;
+    text-transform: capitalize;
+}
+
+a {
+    color: #7A7A7A;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    cursor: pointer;
+}
+
+p {
+    color: #7A7A7A;
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+}
+
+.menu > a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu > a:hover {
+    color: #00FF1A;
+    font-weight: 800;
+}
+
+.container {
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 87px;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 87px;
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h4 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.greenButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FF1A;
+    border-radius: 24px;
+    padding: 12px 24px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.blackButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    padding: 12px 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    background-color: #040405;
+    border: 1px solid #00FF1A;
+    cursor: pointer;
+}
+
+.greenCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00FF1A;
+    border: none;
+    cursor: pointer;
+}
+
+.whiteCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+    border: none;
+    cursor: pointer;
+}
+
+.rectangel {
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: #00FF1A;
+}
+
+.vector {
+    width: 91px;
+    border: 2px solid #00FF1A;
+    height: 0px;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 225px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+
+}
+
+.smallIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.bigIcon {
+    width: 32px;
+    height: 32px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #003004;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+    align-items: center;
+}
+
+/* First container */
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 564px;
+}
+
+.verticalVector > span {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.verticalVector {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    max-width: 400px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 16px;
+}
+
+/* Seccond container */
+
+.statsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 815px;
+    width: 100%;
+    padding-top: 24px;
+    border-top: 1px solid #00FF1A;
+}
+
+.statsNumber {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.statsText {
+    color: #7A7A7A;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Third container */
+
+.curveStacking {
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+}
+
+.boostTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.withdrawals {
+    display: flex;
+    gap: 16px;
+}
+
+.subTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+.supText {
+    color: #7A7A7A;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* next container */
+
+.howitWorks {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.greenIcons {
+    display: flex;
+    gap: 213px;
+}
+
+.registerContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.register {
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+.rightBorder {
+    border-right: 1px solid #4A4A4E;
+}
+
+/* next container */
+
+.hackerContainer {
+    display: flex;
+    gap: 22px;
+}
+
+.CRVwork {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.depositCurve {
+    padding: 0 16px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.depositCurve p {
+    max-width: 403px;
+}
+
+.leftBorder {
+    border-left: 2px solid #4A4A4E;
+}
+
+.depositCurve:first-child {
+    border-left: 2px solid #00FF1A;
+}
+
+/* next container */
+
+.feedback__contact {
+    display: flex;
+    gap: 24px;
+    min-height: 729px;
+    height: 100%;
+}
+
+.rateContainer {
+    max-width: 624px;
+    background-color: #1C1C20;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    margin-top: 12px;
+}
+
+.reatContent {
+    display: flex;
+    gap: 16px;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.NewYork {
+    color: #7A7A7A;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 13px;
+    vertical-align: middle;
+}
+
+.nameStars:first-child,span {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.align {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.subject {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.feedback {
+    color: #7A7A7A;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 540px;
+}
+
+.greenSpan {
+     font-weight: 600;
+     color: #00FF1A;
+}
+
+.bottomQuote {
+    align-self: flex-end;
+    margin-top: -16px;
+}
+
+.circleButton {
+    display: flex;
+    gap: 16px;
+}
+
+.registration--container {
+    display: flex;
+    align-items: center;
+    background-color: #1C1C20;
+    padding: 24px 32px;
+}
+
+.registration--form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.registrationTitle {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+input, textarea {
+    background-color: #1C1C20;
+    border: 1px solid #565656;
+    padding: 12px 16px;
+    border-radius: 4px;
+    width: 328px;
+}
+
+input, textarea::placeholder {
+    color: #7A7A7A;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+textarea {
+    resize: none;
+    height: 155px;
+}
+
+input[type="submit"] {
+    background-color: #00FF1A;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.support--container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #1C1C20;
+    padding: 32px;
+}
+
+.customerBase {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.rateBase {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hotLine {
+    display: flex;
+    gap: 12px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    border-top: 1px solid #00FF1A;
+}
+
+.footer--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.linksCategory {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footerLinks a {
+    cursor: pointer;
+}
+
+.footerLogos {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+
+
